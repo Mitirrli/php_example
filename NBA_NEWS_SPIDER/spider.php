@@ -1,7 +1,7 @@
 <?php
 
-require_once './core/load.php';
-require_once './config/db.php';
+require_once __DIR__ . '/core/load.php';
+require_once __DIR__ . '/config/db.php';
 
 set_time_limit(0);
 
@@ -31,7 +31,6 @@ foreach ($arr as $key => $val) {
     //判断hash值是否已经存在
     $sql = "SELECT * FROM spider WHERE content_hash = '{$hash}'";
     if ($mysqli->query($sql)->num_rows === 0) {
-        echo $val['title'];
         $sql = "INSERT INTO spider (content,content_hash,url) VALUES ('{$val['title']}','{$hash}','{$val['url']}')";// 插入数据
         $result = $mysqli->query($sql);
         $num++;
