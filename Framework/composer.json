@@ -1,6 +1,8 @@
 {
     "name": "mitirrli/framework",
-    "require": {},
+    "require": {
+        "ext-mysqli": ""
+    },
     "autoload": {
         "psr-4": {
             "app\\": "application/"
