@@ -7,3 +7,5 @@ require __DIR__ . DIRECTORY_SEPARATOR . 'framework' . DIRECTORY_SEPARATOR . 'lib
 
 //自动加载
 require FRAMEWORK_PATH . 'autoLoad.php';
+
+

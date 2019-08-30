@@ -16,6 +16,5 @@ require LIBRARY_PATH . 'framework.php';
 
 \App::register();//App加载
 \Env::register();//环境加载
+\Debug::register();//Debug配置
 \Route::register();//路由加载
-
-
