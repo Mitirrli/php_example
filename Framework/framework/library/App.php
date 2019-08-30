@@ -1,7 +1,5 @@
 <?php
 
-require_once CORE_PATH . 'request.php';
-
 /**
  * Framework App核心
  *
@@ -9,13 +7,16 @@ require_once CORE_PATH . 'request.php';
  */
 class App
 {
+    /**
+     * @var App
+     */
     public static $app = null;
 
     private function __construct()
     {
     }
 
-    public static function instance()
+    public static function register()
     {
         if (self::$app === null) {
             self::$app = new self();

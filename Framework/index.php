@@ -1,12 +1,9 @@
 <?php
 
-define("PRODUCT_PATH", __DIR__);//项目路径
-define("APP_PATH", __DIR__ . '/application/');//应用路径
-define("CORE_PATH", __DIR__ . '/core/');
+define("PRODUCT_PATH", __DIR__);//项目目录
 
-require_once PRODUCT_PATH . '/vendor/autoload.php';//composer自动加载
+//常量定义
+require __DIR__ . DIRECTORY_SEPARATOR . 'framework' . DIRECTORY_SEPARATOR . 'library' . DIRECTORY_SEPARATOR . 'constant.php';
 
-require_once CORE_PATH . 'app.php';
-$app = App::instance();//核心类加载
-
-require_once CORE_PATH . 'load.php';
+//自动加载
+require FRAMEWORK_PATH . 'autoLoad.php';
