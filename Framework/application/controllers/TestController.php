@@ -13,11 +13,6 @@ class TestController extends Controller
 {
     public function test()
     {
-        dd(222);
-    }
-
-    public function sql()
-    {
 
     }
 }

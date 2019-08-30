@@ -1,0 +1,12 @@
+{
+    "name": "mitirrli/framework",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "app\\": "application/"
+        },
+        "files": [
+            "application/common.php"
+        ]
+    }
+}
